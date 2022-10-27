@@ -1,5 +1,4 @@
 {
-  "hi": "hola",
   "present": "Soy ",
   "description": "El siguiente paso es envolver nuestro componente principal en el componente Provider de react-redux, al que le vamos a pasar el store. En app.js."
 }

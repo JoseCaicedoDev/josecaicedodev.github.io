@@ -7,6 +7,11 @@ module.exports = {
       fontFamily: {
         montserrat: "'Montserrat', sans-serif;",
       },
+      backgroundImage: {
+        'fondo-dark': "url('/src/assets/fondoDark.jpg')",
+        'fondo-light': "url('/src/assets/hero.jpg')",
+        'fondo-line': "url('/src/assets/line.svg')",
+      },
     },
   },
   plugins: [],
