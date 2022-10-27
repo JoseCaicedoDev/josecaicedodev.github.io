@@ -10,7 +10,7 @@ export const person = {
     'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.',
   imageSrc: imgFace,
   imageAlt: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-  logo: 'https://moure.dev/wp-content/uploads/2021/08/mouredev_logo.png',
+  logo: '',
   logoAlt: 'logo de la brand',
   networkSocial: [
     {
