@@ -1,7 +1,7 @@
 {
   "present": "Soy ",
   "description": "El siguiente paso es envolver nuestro componente principal en el componente Provider de react-redux, al que le vamos a pasar el store. En app.js.",
-  "btn_1": "Mi Sitio web",
-  "btn_2": "Hoja de Vida",
-  "btn_3": "GitHub"
+  "btn_0": "Portafolio",
+  "btn_1": "Hoja de Vida",
+  "btn_2": "GitHub"
 }

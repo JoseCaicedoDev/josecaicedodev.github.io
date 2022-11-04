@@ -37,13 +37,13 @@ function Header(props) {
         className="flex justify-between p-4 sticky top-0 w-full backdrop-blur
       bg-gray-700/20 dark:bg-slate-700/20"
       >
-        <div className="flex flex-shrink-0 items-center border-slate-900/10">
+        <a className="flex flex-shrink-0 items-center cursor-pointer border-slate-900/10" href="/">
           {!isDark ? (
             <img alt="Your Company" className="block h-5 sm:h-6 md:h-7 w-auto" src={ImgLogoBlack} />
           ) : (
             <img alt="Your Company" className="block h-5 sm:h-6 md:h-7 w-auto" src={ImgLogoWhite} />
           )}
-        </div>
+        </a>
 
         <div className="flex dark:text-white gap-1 items-center text-sm text-slate-900">
           <SwitchLanguage handle={props.handle} />

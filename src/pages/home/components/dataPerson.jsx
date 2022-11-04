@@ -26,20 +26,23 @@ export const person = {
     {
       iconImg: <BiWorld className="mr-2 w-5 h-5" />,
       titleName: 'Mi sitio web',
-      href: '#',
+      href: '/portafolio',
       type: 'btn-primary',
+      format: 'link',
     },
     {
       iconImg: <BsReverseLayoutTextSidebarReverse className="mr-2 w-5 h-5" />,
       titleName: 'Curriculum',
-      href: 'https://jose.caicedo.dev/hv-html',
+      href: '/curriculum',
       type: 'btn-secondary',
+      format: 'link',
     },
     {
       iconImg: <BsGithub className="mr-2 w-5 h-5" />,
       titleName: 'GitHub',
       href: 'https://github.com/JoseCaicedoDev',
       type: 'btn-third',
+      format: 'a',
     },
   ],
 }
