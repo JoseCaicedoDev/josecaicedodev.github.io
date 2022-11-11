@@ -8,8 +8,11 @@ export function Card(props) {
         border-gray-400/50 dark:border-gray-700 dark:bg-gray-800/40"
         href="#"
       >
-        <img alt="" className="p-8 object-cover md:w-1/2" src={props.img} />
-        <div className="border-t md:border-l md:border-t-0 md:p-6 border-gray-400/50 dark:border-gray-700 px-4 pb-4 leading-normal">
+        <img alt="" className="p-8 md:max-w-[43%]" src={props.img} />
+        <div
+          className="border-t md:border-l md:border-t-0 md:p-6 border-gray-400/50
+        dark:border-gray-700 px-4 pb-4 leading-normal w-full h-full"
+        >
           <span className="text-xs text-white bg-gray-700 py-1 px-2 text-center font-semibold">
             {props.status}
           </span>
