@@ -1,7 +1,16 @@
+import { useTranslation } from 'react-i18next'
+
 import imgPerson from '../../assets/foto_person.jpeg'
 
 import { dataCurriculum } from './dataCurriculum'
 export function Curriculum() {
+  const { t, i18n } = useTranslation()
+  const handleLanguageLng = (lng) => {
+    i18n.changeLanguage(lng)
+
+    localStorage.setItem('lng', lng)
+  }
+
   return (
     <>
       <article className="cv max-w-[1100px] mx-auto p-4 md:p-8 bg-gray-400/20">
@@ -9,6 +18,7 @@ export function Curriculum() {
         <div className="grid grid-cols-12 gap-4 mb-4">
           <section className="col-span-12 md:col-span-4 xl:col-span-3">
             <img
+              alt="Imagen de jose sentado en su silla y cara sonriente"
               className="w-full h-full object-cover rounded-tr-3xl rounded-bl-3xl mb-4"
               src={imgPerson}
             />
@@ -30,7 +40,7 @@ export function Curriculum() {
               className="relative text-xl font-semibold py-4 tracking-[4px] before:absolute before:w-10 before:h-[2px]
             before:bg-gray-900 before:left-0 before:bottom-0 mb-2 dark:text-gray-100"
             >
-              Perfil
+              {t('perfil')}
             </h3>
             <p className="dark:text-gray-300">{dataCurriculum.description}</p>
           </section>
@@ -45,12 +55,12 @@ export function Curriculum() {
               before:w-10 before:h-[2px] before:bg-gray-900 before:left-0 before:bottom-0 mb-6
                dark:text-gray-100"
               >
-                Educación
+                {t('educacion')}
               </h3>
               {dataCurriculum.Education.map((education) => (
                 <div key={education.title} className="mb-6">
                   <p className="text-gray-500 dark:text-gray-300 text-sm">{education.annio}</p>
-                  <h4 className="font-medium">{education.title}</h4>
+                  <h4 className="font-semibold dark:text-gray-300">{education.title}</h4>
                   <p className="text-gray-500 dark:text-gray-300  text-sm">
                     {education.description}
                   </p>
@@ -76,7 +86,7 @@ export function Curriculum() {
                 className="relative text-xl font-semibold py-3 tracking-[4px] before:absolute before:w-10 before:h-[2px] before:bg-gray-900
               before:left-0 before:bottom-0 mb-5 dark:text-white"
               >
-                Idiomas
+                {t('idiomas')}
               </h3>
               {dataCurriculum.languages.map((data) => (
                 <div key={data} className="mb-2">
@@ -93,7 +103,7 @@ export function Curriculum() {
               before:h-[2px] before:bg-gray-900 before:left-0 before:bottom-0 mb-6
                 dark:text-gray-100"
               >
-                Experiencia
+                {t('experiencia')}
               </h3>
               {dataCurriculum.Experience.map((data) => (
                 <div key={data.title} className="flex flex-col md:flex-row gap-8 w-full mb-4">
@@ -115,7 +125,7 @@ export function Curriculum() {
               before:h-[2px] before:bg-gray-900 before:left-0 before:bottom-0 mb-6
                 dark:text-gray-100"
               >
-                Habilidades
+                {t('habilidades')}
               </h3>
               <div
                 className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 lg:flex-row lg:items-center gap-2 lg:gap-10 mb-4
@@ -123,7 +133,7 @@ export function Curriculum() {
               >
                 {dataCurriculum.skills.map((icon) => (
                   <div key={icon.title} className="flex items-center gap-4">
-                    <img alt="" className="w-9" src={icon.img} />
+                    <img alt={icon.title} className="w-9" src={icon.img} />
                     <span>{icon.title}</span>
                   </div>
                 ))}

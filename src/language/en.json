@@ -1,8 +1,15 @@
 {
   "present":"I am ",
   "description":
-  "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+  "Frontend developer, I make your web designs live and talk with business (backend). And yes, I am also a geomatic agronomist.",
   "btn_0":"Portfolio",
   "btn_1":"Curriculum",
-  "btn_2":"GitHub"
+  "btn_2":"GitHub",
+  "footer":"Building Software with ♥ from LATAM to the world",
+  "footer1":"by",
+  "perfil": "Profile",
+  "educacion": "Education",
+  "experiencia": "Experience",
+  "habilidades": "Skills",
+  "idiomas": "Languages"
 }

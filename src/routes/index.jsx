@@ -23,7 +23,7 @@ function AppRoutes() {
         <Route element={<Portfolio />} path="/portafolio" />
         <Route element={<Curriculum />} path="/curriculum" />
       </Routes>
-      <Footer />
+      <Footer t={t} />
     </>
   )
 }

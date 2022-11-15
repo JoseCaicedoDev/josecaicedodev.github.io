@@ -2,7 +2,7 @@ import iconArcGis from '../../assets/ArcGIS-Pro.png'
 export const dataCurriculum = {
   name: 'José',
   lastname: 'Caicedo',
-  perfil: 'Frontend',
+  perfil: 'Frontend Developer',
   description:
     'Me apasiona la tecnología, es por eso que desde hace dos años he decidido pasarme al lado de los creadores.Actualmente estudio el 4 bimestre en @DigitalHouse Y sí, también soy agrónomo fotogrametrista y que sabe de SIG(Sistema de información geográfico).',
   Education: [
