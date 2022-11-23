@@ -42,14 +42,14 @@ export function Curriculum() {
             >
               {t('perfil')}
             </h3>
-            <p className="dark:text-gray-300">{dataCurriculum.description}</p>
+            <p className="dark:text-gray-300 h-40 sm:h-24 md:h-32 lg:h-24">{t('cv_description')}</p>
           </section>
         </div>
 
         <div className="grid grid-cols-12 gap-4 mb-4">
           <section className="col-span-12 md:col-span-4 xl:col-span-3">
             {/* <!-- Education --> */}
-            <div className="bg-slate-500/30 dark:bg-slate-500/70 rounded-tl-3xl p-8 mb-4">
+            <div className="bg-slate-500/30 dark:bg-slate-500/70 rounded-tl-3xl p-8 mb-4 md:h-96">
               <h3
                 className="relative text-xl font-semibold py-4 tracking-[4px] before:absolute
               before:w-10 before:h-[2px] before:bg-gray-900 before:left-0 before:bottom-0 mb-6
@@ -57,12 +57,14 @@ export function Curriculum() {
               >
                 {t('educacion')}
               </h3>
-              {dataCurriculum.Education.map((education) => (
+              {dataCurriculum.Education.map((education, index) => (
                 <div key={education.title} className="mb-6">
                   <p className="text-gray-500 dark:text-gray-300 text-sm">{education.annio}</p>
-                  <h4 className="font-semibold dark:text-gray-300">{education.title}</h4>
-                  <p className="text-gray-500 dark:text-gray-300  text-sm">
-                    {education.description}
+                  <h4 className="font-semibold dark:text-gray-300">
+                    {t(`education_title${index}`)}
+                  </h4>
+                  <p className="text-gray-500 dark:text-gray-300 text-sm">
+                    {t(`education_description${index}`)}
                   </p>
                 </div>
               ))}
@@ -75,9 +77,11 @@ export function Curriculum() {
               >
                 Hobbies
               </h3>
-              {dataCurriculum.hobbies.map((data) => (
+              {dataCurriculum.hobbies.map((data, index) => (
                 <div key={data.title} className="mb-2">
-                  <p className="text-gray-500 dark:text-gray-300 text-sm">{data}</p>
+                  <p className="text-gray-500 dark:text-gray-300 text-sm">
+                    {t(`hobbies_${index}`)}
+                  </p>
                 </div>
               ))}
             </div>
@@ -88,9 +92,11 @@ export function Curriculum() {
               >
                 {t('idiomas')}
               </h3>
-              {dataCurriculum.languages.map((data) => (
+              {dataCurriculum.languages.map((data, index) => (
                 <div key={data} className="mb-2">
-                  <p className="text-gray-500 dark:text-gray-300 text-sm">{data}</p>
+                  <p className="text-gray-500 dark:text-gray-300 text-sm">
+                    {t(`language_${index}`)}
+                  </p>
                 </div>
               ))}
             </div>
@@ -105,15 +111,19 @@ export function Curriculum() {
               >
                 {t('experiencia')}
               </h3>
-              {dataCurriculum.Experience.map((data) => (
+              {dataCurriculum.Experience.map((data, index) => (
                 <div key={data.title} className="flex flex-col md:flex-row gap-8 w-full mb-4">
                   <div className="dark:text-gray-300 text-sm w-full md:w-[30%]">
                     <p>{data.annio}</p>
-                    <p>{data.company}</p>
+                    <p>{t(`experience_company${index}`)}</p>
                   </div>
                   <div className="w-full md:w-[70%]">
-                    <h4 className="font-semibold dark:text-slate-200">{data.title}</h4>
-                    <p className="text-gray-500 dark:text-slate-400 text-sm">{data.description}</p>
+                    <h4 className="font-semibold dark:text-slate-200">
+                      {t(`experience_title${index}`)}
+                    </h4>
+                    <p className="text-gray-500 dark:text-slate-400 text-sm">
+                      {t(`experience_description${index}`)}
+                    </p>
                   </div>
                 </div>
               ))}

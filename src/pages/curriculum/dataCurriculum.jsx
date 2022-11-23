@@ -1,13 +1,14 @@
 import iconArcGis from '../../assets/ArcGIS-Pro.png'
+
 export const dataCurriculum = {
   name: 'José',
   lastname: 'Caicedo',
   perfil: 'Frontend Developer',
   description:
-    'Me apasiona la tecnología, es por eso que desde hace dos años he decidido pasarme al lado de los creadores.Actualmente estudio el 4 bimestre en @DigitalHouse Y sí, también soy agrónomo fotogrametrista y que sabe de SIG(Sistema de información geográfico).',
+    'Me apasiona la tecnología, es por eso que desde hace dos años he decidido pasarme al lado de los creadores. Actualmente enfocado en el mundo del frontend con React Y sí, también soy agrónomo fotogrametrista que conoce de SIG (Sistema de información geográfico).',
   Education: [
     {
-      annio: '2021 - Actual',
+      annio: '2021 - 2023',
       title: 'DIGITAL HOUSE',
       description: 'Certified Tech Developer con enfoque Frontend',
     },
